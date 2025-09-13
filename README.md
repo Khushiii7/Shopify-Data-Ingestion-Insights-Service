@@ -2,15 +2,6 @@
 
 A multi-tenant Shopify Data Ingestion & Insights Service that simulates how Xeno helps enterprise retailers onboard, integrate, and analyze their customer data.
 
-## 🚀 Features
-
-- **Multi-tenant Architecture**: Isolated data per Shopify store using tenant identifiers
-- **Real-time Data Sync**: Webhook-based real-time updates for products, customers, and orders
-- **Scheduled Sync**: Automated polling for abandoned checkouts and fallback data sync
-- **Interactive Dashboard**: React-based dashboard with charts and metrics visualization
-- **OAuth Integration**: Secure Shopify app installation and authentication
-- **RESTful APIs**: Clean API endpoints for metrics and data management
-
 ## 🏗️ Architecture
 
 ```
@@ -181,7 +172,7 @@ The application uses a multi-tenant architecture with the following key models:
 ### Webhooks
 - `POST /webhooks/receive` - Shopify webhook receiver
 
-## 🎯 Usage
+## Usage
 
 ### 1. Install Shopify App
 Visit: `http://localhost:4000/auth/install?shop=your-store.myshopify.com`
@@ -206,15 +197,8 @@ Visit: `http://localhost:4000/auth/install?shop=your-store.myshopify.com`
 - **Date Range Filter**: Filter data by custom date ranges
 - **Store Selection**: Switch between multiple connected stores
 
-## 🔒 Security Features
 
-- JWT-based authentication
-- HMAC webhook verification
-- Multi-tenant data isolation
-- Password hashing with bcrypt
-- CORS protection
-
-## 🚀 Deployment
+##  Deployment
 
 ### Using Render (Recommended)
 
@@ -244,7 +228,7 @@ APP_URL="https://your-backend-domain.com"
 FRONTEND_URL="https://your-frontend-domain.com"
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Manual Testing Checklist
 
@@ -271,48 +255,10 @@ FRONTEND_URL="https://your-frontend-domain.com"
 4. **Scalability**: Single database instance (consider separate DBs per tenant for large scale)
 5. **Security**: Basic authentication (add role-based access control)
 
-## 🔄 Next Steps for Production
-
-1. **Security Enhancements**:
-   - Encrypt access tokens at rest
-   - Implement rate limiting
-   - Add comprehensive input validation
-   - Implement role-based access control
-
-2. **Scalability Improvements**:
-   - Add Redis for caching
-   - Implement queue system for heavy operations
-   - Consider separate databases per tenant
-   - Add horizontal scaling support
-
-3. **Monitoring & Observability**:
-   - Add logging and monitoring
-   - Implement health checks
-   - Add performance metrics
-   - Set up alerting
-
-4. **Testing**:
-   - Add unit tests
-   - Implement integration tests
-   - Add end-to-end testing
-   - Set up CI/CD pipeline
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-For questions or support, please open an issue in the GitHub repository.
-
----
-
-**Note**: This is a demonstration project for the Xeno assignment. In production, additional security, monitoring, and scalability measures should be implemented.
