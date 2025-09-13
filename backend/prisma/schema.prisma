@@ -3,14 +3,15 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
 model Tenant {
   id           Int      @id @default(autoincrement())
   shopDomain   String   @unique
-  shopId       String?  // optional shop id
+  shopId       String?  
   accessToken  String
   installedAt  DateTime @default(now())
   users        User[]

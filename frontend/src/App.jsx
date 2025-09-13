@@ -8,7 +8,12 @@ import ProtectedRoute from './components/ProtectedRoute'
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter
+        future={{
+          v7_startTransition: true,
+          v7_relativeSplatPath: true
+        }}
+      >
         <div className="min-h-screen bg-gray-50">
           <Routes>
             <Route path="/" element={<Navigate to="/login" replace />} />

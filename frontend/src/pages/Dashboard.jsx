@@ -13,7 +13,7 @@ import {
   Calendar,
   User
 } from 'lucide-react'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
 import axios from 'axios'
 
 const Dashboard = () => {
