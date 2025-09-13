@@ -247,7 +247,7 @@ FRONTEND_URL="https://your-frontend-domain.com"
 3. Place test orders
 4. Verify data appears in dashboard
 
-## 📝 Known Limitations
+## Known Limitations
 
 1. **Token Storage**: Access tokens are stored in plain text (encrypt in production)
 2. **Rate Limiting**: No built-in Shopify API rate limiting (add retry logic)
